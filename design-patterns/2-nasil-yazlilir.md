@@ -1953,6 +1953,12 @@ public class Program
 
 ```
 
+
+Umarım faydalı olmuştur.
+
+Bir sonraki yazımızda tasarım desenlerinin birbirleriyle olan ilişkilerine, benzer ve farklı oldukları yerlere değineceğiz.
+
+
 # Kaynaklar
 - https://egitimbilimlerinotlari.com/bilgi-isleme-kuraminin-temel-kavramlari/
 - https://tr.wikipedia.org/wiki/Loci_Metodu
@@ -1963,4 +1969,3 @@ public class Program
 - https://dotnettutorials.net/course/dot-net-design-patterns/
 - https://refactoring.guru/design-patterns
 - https://www.dofactory.com/
-- 

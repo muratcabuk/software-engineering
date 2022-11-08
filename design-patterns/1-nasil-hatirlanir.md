@@ -1,16 +1,16 @@
-# Tasarım Desenleri Nasıl Hatırlanır? (Tasarım Desenleri 1)
+# Tasarım Desenlerini Neden Kullanamıyoruz?
 
 Merhaba arkadaşlar,
 
-Eğer bu yazı sizi de başlığından dolayı buraya getirdiyse tahminim siz de bir çok yazılımcı gibi tasarım desenlerini defalarca kez çalışıp doğru düzgün kullanamadan unuttunuz.
+Eğer yazının başlığından dolayı buraya geldiyseniz tahminim siz de bir çok yazılımcı gibi tasarım desenlerini defalarca kez çalışıp doğru düzgün kullanamadan unuttunuz. 
 
-Her defasında bir söz verilir artık kullanacağım diye ama hiç kullanılmaz. Çünkü ihtiyaç duyulmaz. Kod yazarken tam olarak tasarım desenini çalıştığı örnek durum ve/veya uml diyagramına benzer bir yapının birebir denk geleceği ve yazılımcının da hemen ilişki kurup veya hissedip :) "ha işte beklediğim an geldi" deyip ilgili tasarım desenini kullanacağı beklentisi ile kod yazılır. Tabii ki öyle bir an yaşanmadığı için unutulur. Dolayısıyla ihtiyaç da duyulmamış olur.
+Hikaye şöyle başlar, her defasında bir söz verilir artık kullanacağım diye ama hiç kullanılmaz. Çünkü ihtiyaç duyulmaz. Kod yazarken tam olarak tasarım desenini çalıştığımız örnek duruma veya uml diyagramına benzer bir yapının birebir denk geleceğini düşünürüz. Bu durum yaşandığı anda da hemen ilişki kurup veya hissedip :) "ha işte beklediğim an geldi" deyip ilgili tasarım desenini kullanabileceğimizi zannederiz. Tabii ki öyle bir an yaşanmadığı için unutulur. Dolayısıyla ihtiyaç da duyulmamış olur.
 
 Belki ilk yanılgı tasarım desenlerinin doğrudan amaç olarak görülmesinden dolayı birebir aynı durumlar yakalanmaya çalışılır. Örneğin "bir gün öyle bir nesne yaratmam gerekecek ki o nesne çok büyük olacak, yapıcı metodunda bir ton parametre gerekecek, çok karmaşık olacak ve bundan dolayı ben onun için builder tasarım desenini kullanacağım. O gün yazılım hayatımın altın günü olacak :)" gibi planlar yapılır.
 
 Ancak böyle bir bakış açısıyla tasarım desenlerinin hafızamızda kalması veya birebir aynı yapıya uygun bir pattern yakalamaya çalışarak uygulanmaya çalışılması zor olacaktır.
 
-## Tasarım Desenleri Amaç Değil Sonuçtur
+ 
 
 Bu nedenle öncelikle tasarım desenlerine bakışımızı değiştirmemiz gerekiyor. Yukarıda bahsettiğim durumlar aslında tasarım desenlerinin bir amaç edinildiğini gösteriyor. Halbuki asıl amacımız prensiplere uymak/uygulamak olmalıdır.
 
@@ -23,6 +23,38 @@ Alttaki listede en çok kullanılan prensiplerden bazılarını bulabilirsiniz.
 - **KISS** : Keep It Simple Stupid Principle
 
 Daha bir çok prensip var tabii ki. Bunlar ve diğerleri için bir çok kaynak bulabilirsiniz.
+
+Yani işin özü kendinizi öncelikle temiz kod yazmaya alıştırmalısınız. Bu süreç tasarı desenlerini hazmekten çok daha fazla zaman alabilir. Bunun için e temel bir kaç kaynağı ekliyorum. Ne yazık ki bu kaynakların hepsi İngilizce. Dağınık ta olsa birçoğu için Türkçe kaynaklar bulabilirsiniz. Ancak en doğrusu İngilizcenizi bunları anlayacak seviyeye getirmek olacaktır.
+
+![files/gof.jpg](files/gof.jpg)
+
+[Design Patterns: Elements of Reusable Object-Oriented Software](https://www.amazon.com.tr/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)
+
+
+![files/cc.jpg](files/cc.jpg)
+
+[Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
+
+
+
+
+![files/uml.jpg](files/uml.jpg)
+
+[Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development ](https://www.amazon.com/Applying-UML-Patterns-Introduction-Object-Oriented/dp/0131489062)
+
+
+![files/refactoring.jpg](files/refactoring.jpg)
+
+[Refactoring: Improving the Design of Existing Code](https://www.amazon.com/Refactoring-Improving-Existing-Addison-Wesley-Signature/dp/0134757599)
+
+
+![files/patterns.jpg](files/patterns.jpg)
+
+[Patterns of Enterprise Application Architecture](https://www.amazon.com/Patterns-Enterprise-Application-Architecture-Martin/dp/0321127420)
+
+
+
+
 
 Prensiplerin olmadığı bir dünyada zaten her şeyi istediğimiz gibi yazarız. Bu durumda her durum için ayrı prensip ezberlemek durumunda kalırız ki bu hakikaten salt ezberlemek olur. Halbuki bizi tasarım deseni yazmaya zorlayan şey prensiplere uyma zorunluluğumuz olmalıdır. Zaten aynı durumlar yaşandıkça bunlar için geliştirilen teknikleri yazılı hale getirmek [birilerinin aklına gelmiş](https://en.wikipedia.org/wiki/Design_Patterns).
 
@@ -133,7 +165,7 @@ Behavioral tasarım desenleri nesneler arasındaki iletişimle ve doğru iletiş
 
 ## Gerçek Hayattan Örneklerle Tasarım Desenleri
 
-Şimdi bu tanımların üzerine gerçek hayattan örnekler vererek pekiştirmeye çalışalım. Her yeni başlıkta bir önceki başlıkta öğrendiğimizi tekrar ederek devam edeceğiz. Örneklerden amacımız bir uygulama veya kodunun yazılması muhtemel  TODO ................................
+Şimdi bu tanımların üzerine gerçek hayattan örnekler vererek pekiştirmeye çalışalım. Her yeni başlıkta bir önceki başlıkta öğrendiğimizi tekrar ederek devam edeceğiz. Örneklerde amacımız bir uygulama içinde yazılması muhtemel örnekler vermekten ziyade gerçek hayatta yaşamamızın muhtemel olduğu örnekler vermek. Bir nevi hikayeleştirme ve farklı objelerle ilişki kurarak hafızamızda daha kalıcı olmasını sağlamış olacağız. 
 ### Oluşturucu (Creational) Tasarım Desenleri
 
 
@@ -289,6 +321,9 @@ Bir satırlık kod ile kolaylıkla oluşturduğumuz bazı nesnelerin sistem tara
 **Örnek:** Örneğin bir okula aşı vurmak için bir doktorun geldiğini düşünelim. Normalde okulun öğrencilerine aşı vurmak gibi hizmeti yoktur yani asli işlerinden biri değildir. Aşıyı yapacak doktoru bir misafir olarak okula gelir ve okuldaki öğrencilere aşılarını yapar. Okulu yapısında (mesela organizasyon şemasını değiştirmeye) veya öğrencilerde herhangi bir değişiklik yapmaya (mesela aşı vurulacaklar diye farklı kıyafet giymelerine) gerek yoktur. 
 
 
+Umarım faydalı olmuştur. 
+
+Bir sonraki yazımızda tasarım desenlerinin nasıl yazılacağını kod örnekleri ile inceleyeceğiz.
 # Kaynaklar
 - https://egitimbilimlerinotlari.com/bilgi-isleme-kuraminin-temel-kavramlari/
 - https://tr.wikipedia.org/wiki/Loci_Metodu
